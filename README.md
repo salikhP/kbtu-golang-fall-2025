@@ -1,0 +1,1 @@
+# KBTU Golang Application Course Fall 2025
