@@ -1,0 +1,41 @@
+
+2000
+1800
+1750
+1078
+
+G1
+|
+Counter
+|
+G2
+
+counter = 0
+
+G1: load counter -> 0
+G2: load counter -> 0
+G1: counter++ -> 1
+G1: store -> counter = 1
+G2: counter++ -> 1
+
+
+type chan struct {
+    mx sync.Mutex
+    buffer []T // 0
+    readers []Goroutines
+    writers []Goroutines
+}
+
+WaiGroup:
+- Add()
+- Done()
+- Wait()
+
+go: 1  go: 2 go: 3 go: 4 ...
+go: "exit"
+
+
+counter: 554
+
+G1: 553 -> 554
+G2: 553 -> 554
